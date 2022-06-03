@@ -15,4 +15,6 @@ for r, d, f in os.walk("/home/runner/work/"): # change the hard drive, if you wa
             #FilePath_Final = os.path.join(r, file)
             #subprocess.run(["optimize-images", FilePath_Final])
         	print(os.path.join(r, file))
+            FilePath_Final = os.path.join(r, file)
+            subprocess.run(["optimize-images", FilePath_Final])
 print(f"Optimized {counter} files.")
